@@ -20,7 +20,7 @@ export default class TouchControl extends GameObject {
     if(!backgroundSpriteRenderer) console.error('you must provide a background sprite to the touch control')
     if(!stickSpriteRenderer) console.error('you must provide a sprite to the touch control')
     if(!onStickMoved || !(onStickMoved instanceof Function) ) console.error('you must provide a onStickMoved function')
-    if(onStickReleased instanceof Function) console.error('optional parameter "onStickReleased" must be a function')
+    if(!(onStickReleased instanceof Function)) console.error('optional parameter "onStickReleased" must be a function')
 
     // Set the background renderer and instantiate the GameObject
     params.renderers = [backgroundSpriteRenderer]
