@@ -1,0 +1,11 @@
+{
+  "name": "@dreamirl/de-plugin-touch-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/TouchControl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DreamIrl",
+  "license": "ISC"
+}
