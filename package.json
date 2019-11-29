@@ -2,10 +2,19 @@
   "name": "@dreamirl/de-plugin-touch-control",
   "version": "1.0.0",
   "description": "",
-  "main": "src/TouchControl.js",
+  "main": "dist/TouchControl.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "./node_modules/.bin/babel src --out-dir dist"
   },
   "author": "DreamIrl",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0"
+  }
 }
